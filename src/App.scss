@@ -170,12 +170,20 @@
     }
 }
 .cheesy-8-card{
-    button{
+    .dedicated{
         border-radius: 23px;
         background: #0b8291 !important;
         border-color: #0b8291 !important;
         :hover {
           background: #0b8291 !important;
+        }
+    }
+    .favourite{
+        border-radius: 23px;
+        background: #9814bf !important;
+        border-color: #9814bf !important;
+        :hover {
+          background: #9814bf !important;
         }
     }
 }

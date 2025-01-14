@@ -10,26 +10,44 @@ import Cheesy4 from "./assets/cheesy-4.gif";
 import Cheesy5 from "./assets/cheesy-5.gif";
 import Cheesy6 from "./assets/cheesy-6.gif";
 import Dance from "./assets/dance.gif";
-import Music from "./assets/music.mp3";
 import StarGif from "./assets/star.gif";
+import dedicated from "./assets/dedicated.mp3";
+import favourite from "./assets/favourite.mp3";
 import { useState } from "react";
 
 const App = () => {
+    let currentAudio = null; // Keeps track of the currently playing audio
+
   const [currentStep, setCurrentStep] = useState(0);
   const handleStepChange = step => {
     setCurrentStep(step);
   };
-  const handleAudioPlay = () => {
-    var audio = document.getElementById("audio");
-    audio.play();
-  };
+  const handleAudioPlay = (id) => {
+    // Stop the currently playing audio if it exists
+    if (currentAudio && !currentAudio.paused) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+  
+    // Get the new audio element
+    const audio = document.getElementById(id);
+  
+    // Play the selected audio and update the current audio reference
+    if (audio) {
+        audio.play();
+        currentAudio = audio;
+      }
+    };
+    
   return (
     <>
       {currentStep === 0 ? (
         <Card className="special-day-card">
           <CardBody>
             <img src={StarGif} alt="" className="star-gif" />
-            <h3 className="text-warning">It's Your Special Day Yeyeye !</h3>
+            <h3 className="text-warning">
+              It&apos;s Your Special Day Yeyeye !
+            </h3>
             <h4 className="text-info">
               Ab kuch cheesyyyyyy linein tumhaare liye kyunki hihihi uske bina
               boo boo ko maje khah aayenge (mai apni baat kr rhi hu 🤭)
@@ -216,20 +234,34 @@ const App = () => {
           <CardBody>
             <img src={Dance} alt="" className="star-gif my-3" />
             <br />
-            <Button
-              className=""
-              onClick={() => {
-                handleAudioPlay();
-              }}>
-              Play Music
-            </Button>
-            <audio controls id="audio" className="d-none">
-              <source src={Music} type="audio/ogg" />
-              <source src={Music} type="audio/mpeg" />
+            <div className="d-flex justify-content-center align-items-center mt-3 gap-1">
+              <Button
+                className="dedicated"
+                onClick={() => {
+                  handleAudioPlay("dedicated");
+                }}>
+                Play Your Dedicated Music
+              </Button>
+              <Button
+                className="favourite"
+                onClick={() => {
+                  handleAudioPlay("favourite");
+                }}>
+                Play Your Favourite Music
+              </Button>
+            </div>
+            <audio controls id="dedicated" className="d-none">
+              <source src={dedicated} type="audio/ogg" />
+              <source src={dedicated} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <audio controls id="favourite" className="d-none">
+              <source src={favourite} type="audio/ogg" />
+              <source src={favourite} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
             <h3 className="my-4">Happy Birthday Boo Boo 😘 💞</h3>
-            <h4>Let's Dance 💃🕺 </h4>
+            <h4>Let&apos;s Dance 💃🕺 </h4>
             <h4>I Love You Boo Boo 💞❤️</h4>
           </CardBody>
         </Card>
@@ -239,5 +271,4 @@ const App = () => {
     </>
   );
 };
-
 export default App;

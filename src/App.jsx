@@ -2,6 +2,7 @@ import "./App.scss";
 
 import { Button, Card, CardBody } from "reactstrap";
 
+import Background from "./assets/background.gif";
 import BooBooTimeline from "./assets/BooBooTimeline.png";
 import Cheesy1 from "./assets/cheesy-1.gif";
 import Cheesy2 from "./assets/cheesy-2.gif";
@@ -217,7 +218,7 @@ const App = () => {
               className=""
               onClick={() => {
                 document.body.style.background =
-                  "url('src/assets/background.gif')";
+                  `url(${Background})`;
                 document.getElementsByClassName("card")[0].style.background =
                   "transparent";
                 handleStepChange(8);

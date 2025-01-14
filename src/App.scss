@@ -1,0 +1,181 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.special-day-card {
+  background: #ffe6f0;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 333px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h3 {
+    margin: 20px 0;
+  }
+  button {
+    background: #ffe43e !important;
+    border-color: #ffe43e !important;
+    :hover {
+      background: #ffe43e !important;
+    }
+  }
+}
+
+.cheesy-1-card {
+  background: #daa488;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 133px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  button {
+    background: #ec36a5 !important;
+    border-color: #ec36a5 !important;
+    :hover {
+      background: #ec36a5 !important;
+    }
+  }
+}
+
+.cheesy-2-card {
+  background: #f9fd95;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 133px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  button {
+    background: red !important;
+    border-color: red !important;
+    :hover {
+      background: red !important;
+    }
+  }
+}
+.cheesy-3-card {
+  background: #b8b9bc;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 133px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h3 {
+    color: #ba383e !important;
+  }
+  button {
+    background: #9814bf !important;
+    border-color: #9814bf !important;
+    :hover {
+      background: #9814bf !important;
+    }
+  }
+}
+.cheesy-4-card {
+  background: #7b5230;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 133px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h3 {
+    margin-top: 20px !important;
+    color: black !important;
+  }
+  button {
+    background: #191210 !important;
+    border-color: #191210 !important;
+    :hover {
+      background: #191210 !important;
+    }
+  }
+}
+
+.cheesy-5-card {
+  background: #f8b1b5;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 133px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .boo-boo-timeline {
+    height: 700px;
+    border: 1px dashed;
+  }
+  h3 {
+    color: #b70324;
+  }
+  button {
+    background: #f64d5e !important;
+    border-color: #f64d5e !important;
+    :hover {
+      background: #f64d5e !important;
+    }
+  }
+}
+
+.cheesy-6-card {
+  background: #1b2636;
+  .star-gif {
+    margin-top: 20px;
+    height: 100%;
+    width: 133px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .boo-boo-timeline {
+    height: 700px;
+    border: 1px dashed;
+  }
+  h3 {
+    color: white;
+  }
+  button {
+    background: #f64d5e !important;
+    border-color: #f64d5e !important;
+    :hover {
+      background: #f64d5e !important;
+    }
+  }
+}
+.cheesy-7-card{
+    button{
+        border-radius: 23px;
+        background: #9814bf !important;
+        border-color: #9814bf !important;
+        :hover {
+          background: #9814bf !important;
+        }
+    }
+}
+.cheesy-8-card{
+    button{
+        border-radius: 23px;
+        background: #0b8291 !important;
+        border-color: #0b8291 !important;
+        :hover {
+          background: #0b8291 !important;
+        }
+    }
+}

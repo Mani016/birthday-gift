@@ -1,0 +1,7 @@
+body {
+    background: url('./assets/heart-floating.gif') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Ensure the body covers the full viewport height */
+    margin: 0; /* Remove default margin */
+    overflow: scroll; /* Prevent scrolling */
+  }

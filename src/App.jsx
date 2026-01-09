@@ -51,7 +51,7 @@ const App = () => {
             </h3>
             <h4 className="text-info">
               Ab kuch cheesyyyyyy linein tumhaare liye kyunki hihihi uske bina
-              boo boo ko maje khah aayenge (mai apni baat kr rhi hu 🤭)
+              doo doo ko maje khah aayenge (mai apni baat kr rhi hu 🤭)
             </h4>
             <div className="d-flex justify-content-end align-items-center mt-3">
               <Button
@@ -73,7 +73,7 @@ const App = () => {
             <img src={Cheesy1} alt="" className="star-gif" />
             <h2>cheesy lines se phle</h2>
             <h1>
-              I Love You Boo Boo ❤️
+              I Love You Doo Doo ❤️
               <br />I Love You❤️
             </h1>
             <p className="mt-2">
@@ -84,7 +84,7 @@ const App = () => {
               thik hai thik hai nahi kr rhi behes tum phle ho jaaoge mujhse 👴🤭
             </p>
             <p> Acha sorry sorry 🤭</p>
-            <p>I Love You boo boo ❤️ Thank you Thank you❤️</p>
+            <p>I Love You doo doo ❤️ Thank you Thank you❤️</p>
             <p>
               Zindagi ko itna khoobsurat bnaane ke liye mujhe fir se jeena
               sikhaane ke liye thank you 😘
@@ -158,7 +158,7 @@ const App = () => {
               fast main chalti hoon... 💾💋
             </h3>
             <h3>
-              Boo Boo, tum woh app ho jiska subscription lifetime ke liye
+              Doo Doo, tum woh app ho jiska subscription lifetime ke liye
               chahiye, with unlimited updates... 📱💞
               <br />
               Milega Kya ?
@@ -194,7 +194,7 @@ const App = () => {
             <br />
             <img src={BooBooTimeline} alt="" className="boo-boo-timeline" />
             <h3 className="my-3">4+4=8 but you+me=fate 😍🧿</h3>
-            <h3>I Love You Boo Boo ❤️🫶🏻</h3>
+            <h3>I Love You Doo Doo ❤️🫶🏻</h3>
             <div className="d-flex justify-content-end align-items-center mt-3">
               <Button
                 onClick={() => {
@@ -261,9 +261,9 @@ const App = () => {
               <source src={favourite} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
-            <h3 className="my-4">Happy Birthday Boo Boo 😘 💞</h3>
+            <h3 className="my-4">Happy Birthday Doo Doo 😘 💞</h3>
             <h4>Let&apos;s Dance 💃🕺 </h4>
-            <h4>I Love You Boo Boo 💞❤️</h4>
+            <h4>I Love You Doo Doo 💞❤️</h4>
           </CardBody>
         </Card>
       ) : (
